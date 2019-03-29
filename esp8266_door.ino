@@ -67,7 +67,7 @@ int get_http(String state)
    int ret = 0;
    Serial.print("[HTTP] begin...\n");
    // configure ifttt server and url  should be HTTP only..not https!!!  (http://)   
-    http.begin("http://maker.ifttt.com/trigger/door_opened/with/key/YOUR KEY FROM IFTTT"); //HTTP
+    //http.begin("http://maker.ifttt.com/trigger/door_opened/with/key/YOUR KEY FROM IFTTT"); //HTTP
    //If you have enabled value1 from iftt settings then uncomment below line to send value and comment out above line 
     http.begin("http://maker.ifttt.com/trigger/door_opened/with/key/YOUR KEY FROM IFTTT/?value1="+state); //HTTP
 
